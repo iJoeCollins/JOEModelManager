@@ -37,6 +37,8 @@
 		D8882F8C18F1C619009E802A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8882F6A18F1C618009E802A /* UIKit.framework */; };
 		D8882F9418F1C619009E802A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8882F9218F1C619009E802A /* InfoPlist.strings */; };
 		D8882F9618F1C619009E802A /* JOEModelManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8882F9518F1C619009E802A /* JOEModelManagerTests.m */; };
+		D8882FAB18F1C65D009E802A /* JOEModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8882FAA18F1C65D009E802A /* JOEModelManager.m */; };
+		D8882FAF18F1CC46009E802A /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D8882FAE18F1CC46009E802A /* MyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +65,8 @@
 		D8882F7918F1C618009E802A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8882F7B18F1C618009E802A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D8882F7C18F1C618009E802A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D8882F7E18F1C618009E802A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D8882F8018F1C618009E802A /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		D8882F7E18F1C618009E802A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D8882F8018F1C618009E802A /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = Readme.markdown; path = ../Readme.markdown; sourceTree = "<group>"; };
 		D8882F8218F1C618009E802A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8882F8818F1C619009E802A /* JOEModelManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JOEModelManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8882F8918F1C619009E802A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -74,6 +76,10 @@
 		D8882F9A18F1C619009E802A /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
 		D8882F9C18F1C619009E802A /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Programming Guide-template.markdown"; sourceTree = "<group>"; };
 		D8882F9D18F1C619009E802A /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Setup Guide-template.markdown"; sourceTree = "<group>"; };
+		D8882FA918F1C65D009E802A /* JOEModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOEModelManager.h; sourceTree = "<group>"; };
+		D8882FAA18F1C65D009E802A /* JOEModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEModelManager.m; sourceTree = "<group>"; };
+		D8882FAD18F1CC46009E802A /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		D8882FAE18F1CC46009E802A /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,8 @@
 		D8882F5A18F1C618009E802A = {
 			isa = PBXGroup;
 			children = (
-				D8882F6C18F1C618009E802A /* JOEModelManager */,
+				D8882FAC18F1C663009E802A /* JOEModelManager */,
+				D8882F6C18F1C618009E802A /* Demo */,
 				D8882F8F18F1C619009E802A /* JOEModelManagerTests */,
 				D8882F9918F1C619009E802A /* Documentation */,
 				D8882F6518F1C618009E802A /* Frameworks */,
@@ -131,7 +138,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8882F6C18F1C618009E802A /* JOEModelManager */ = {
+		D8882F6C18F1C618009E802A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				D8882F7518F1C618009E802A /* AppDelegate.h */,
@@ -139,12 +146,12 @@
 				D8882F7818F1C618009E802A /* Main.storyboard */,
 				D8882F7B18F1C618009E802A /* ViewController.h */,
 				D8882F7C18F1C618009E802A /* ViewController.m */,
-				D8882F7E18F1C618009E802A /* LICENSE */,
-				D8882F8018F1C618009E802A /* Readme.markdown */,
 				D8882F8218F1C618009E802A /* Images.xcassets */,
 				D8882F6D18F1C618009E802A /* Supporting Files */,
+				D8882FAD18F1CC46009E802A /* MyObject.h */,
+				D8882FAE18F1CC46009E802A /* MyObject.m */,
 			);
-			path = JOEModelManager;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		D8882F6D18F1C618009E802A /* Supporting Files */ = {
@@ -180,7 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				D8882F9A18F1C619009E802A /* AppledocSettings.plist */,
+				D8882F7E18F1C618009E802A /* LICENSE */,
 				D8882F9B18F1C619009E802A /* Programming Guides */,
+				D8882F8018F1C618009E802A /* Readme.markdown */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
@@ -192,6 +201,15 @@
 				D8882F9D18F1C619009E802A /* Setup Guide-template.markdown */,
 			);
 			name = "Programming Guides";
+			sourceTree = "<group>";
+		};
+		D8882FAC18F1C663009E802A /* JOEModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8882FA918F1C65D009E802A /* JOEModelManager.h */,
+				D8882FAA18F1C65D009E802A /* JOEModelManager.m */,
+			);
+			path = JOEModelManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +330,9 @@
 			files = (
 				D8882F7D18F1C618009E802A /* ViewController.m in Sources */,
 				D8882F7718F1C618009E802A /* AppDelegate.m in Sources */,
+				D8882FAB18F1C65D009E802A /* JOEModelManager.m in Sources */,
 				D8882F7318F1C618009E802A /* main.m in Sources */,
+				D8882FAF18F1CC46009E802A /* MyObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,8 +458,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOEModelManager/JOEModelManager-Prefix.pch";
-				INFOPLIST_FILE = "JOEModelManager/JOEModelManager-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/JOEModelManager-Prefix.pch";
+				INFOPLIST_FILE = "Demo/JOEModelManager-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -451,8 +471,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOEModelManager/JOEModelManager-Prefix.pch";
-				INFOPLIST_FILE = "JOEModelManager/JOEModelManager-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/JOEModelManager-Prefix.pch";
+				INFOPLIST_FILE = "Demo/JOEModelManager-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -468,7 +488,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOEModelManager/JOEModelManager-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOEModelManager-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -490,7 +510,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOEModelManager/JOEModelManager-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOEModelManager-Prefix.pch";
 				INFOPLIST_FILE = "JOEModelManagerTests/JOEModelManagerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

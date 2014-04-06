@@ -1,11 +1,7 @@
 Abstract
 --------
 
-<# Description goes here. #>
-
-Contains several <# subject #>
-
-- <# class name #> - <# description #>
+Simple data storage manager using NSCoding for persistance to disk.
 
 Setup
 -----

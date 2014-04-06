@@ -7,12 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "JOEModelManager.h"
+#import "ViewController.h"
+#import "MyObject.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSLog(@"DidFinishLaunching");
     // Override point for customization after application launch.
+    ViewController *viewController = (ViewController *)self.window.rootViewController;
+    
+    // Initialize the shared model manager to perform data modeling tasks
+    BOOL success = [[JOEModelManager sharedManager] load];
+    
+    if (!success) {
+        // This is a brand new user, let's introduce them!
+        // You could use this functionality to instantiate an Introduction View Controller
+        viewController.myObject = [[MyObject alloc] initWithText:@"Welcome New User!"];
+        [[JOEModelManager sharedManager] addObject:viewController.myObject];
+        [[JOEModelManager sharedManager] save];
+    }else {
+        // This user has existing data. Get straight to work.
+        // Here you would instantiate the main part of the app or just do work.
+        viewController.myObject = [[JOEModelManager sharedManager] objectAtIndex:0];
+    }
+    
     return YES;
 }
 							
