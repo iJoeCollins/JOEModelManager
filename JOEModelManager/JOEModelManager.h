@@ -92,7 +92,6 @@ extern NSString *const JOEModelManagerDidSaveUserInfoKey;
 /*! Replaces the object at index with anObject.
  
     @param index  The index of the object which will be replaced.
-    @see Raises an NSRangeException if index is beyond the end of the array.
     @param object The object that will replace the one at the index. Should not be nil.
 */
 
